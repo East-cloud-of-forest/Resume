@@ -1,0 +1,14 @@
+@import "./style/colors";
+
+.App {
+  background-color: $basic;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+  padding-top: 3rem;
+
+  .main {
+    max-width: 800px;
+    margin: auto;
+  }
+}
