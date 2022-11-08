@@ -7,3 +7,10 @@ export const Button = ({children, white, circle, width}) => {
     {children}
   </div>)
 }
+
+export const Title = ({children}) => {
+  return (<div className='Title'>
+    {children}
+    <div className='box'></div>
+  </div>)
+}

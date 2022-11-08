@@ -1,3 +1,27 @@
 .Profile {
-  background-color: red;
+  margin-top: 5rem;
+
+  .intro {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+
+    li {
+      width: 100%;
+      .url {
+        opacity: 0.3;
+        text-decoration: underline;
+        opacity: 0.3s;
+      }
+
+      &:hover .url{
+        opacity: 1;
+      }
+    }
+  }
 }
