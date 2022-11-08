@@ -1,4 +1,10 @@
 @import "../style/colors";
+@font-face {
+  font-family: 'CoreDream';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .Button {
   padding: 0.5rem 1rem;
@@ -17,5 +23,24 @@
 
   &:hover {
     background-color: lighten($basic, 10%);
+  }
+}
+
+.Title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+
+  .box {
+    width: 15px;
+    height: 100%;
+    background-color: dodgerblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 }
