@@ -31,7 +31,13 @@ const Profile = () => {
       </p>
       <ul>
         {contect.map(x=>(
-          <li key={x.kind}><Button><span dangerouslySetInnerHTML={{__html: x.icon }} /> {x.kind} <span className='url'>{x.url}</span></Button></li>
+          <li key={x.kind} onClick={()=>{
+            if (x.kind === '이메일') {
+              window.location.href = "mailto:ecof1911@gmail.com"
+            } else {
+              window.open(x.url)
+            }
+          }}><Button><span dangerouslySetInnerHTML={{__html: x.icon }} /> {x.kind} <span className='url'>{x.url}</span></Button></li>
         ))}
       </ul>
     </div>

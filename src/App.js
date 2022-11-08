@@ -1,6 +1,7 @@
 import './App.scss';
 import Header from './components/Header';
 import Profile from './components/Profile';
+import Skill from './components/Skill';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className='main'>
         <Header />
         <Profile />
+        <Skill />
       </div>
     </div>
   );
