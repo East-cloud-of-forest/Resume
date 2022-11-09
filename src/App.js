@@ -1,4 +1,5 @@
 import './App.scss';
+import Experience from './components/Experience';
 import Header from './components/Header';
 import Profile from './components/Profile';
 import Skill from './components/Skill';
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Profile />
         <Skill />
+        <Experience />
       </div>
     </div>
   );

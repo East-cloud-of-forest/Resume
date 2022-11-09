@@ -1,10 +1,11 @@
 import { Title } from "./Common";
 import "../style/Skill.scss";
 import skill from "../data/skill";
+import classNames from "classnames";
 
 const Skill = () => {
   return (
-    <div className="Skill">
+    <div className={classNames("Skill", 'section')}>
       <Title>Skill</Title>
       <ul>
         {skill.map((x, i) => (
