@@ -1,0 +1,43 @@
+.ProjectSlide {
+  width: 100%;
+  overflow: hidden;
+
+  .slides {
+    position: relative;
+
+    ul {
+      white-space: nowrap;
+      margin: 0;
+      width: 100%;
+      position: relative;
+      left: -50%;
+      height: 200px;
+
+      .slide {
+        width: 45%;
+        border-radius: 7px;
+        margin: 0 2.5%;
+        display: inline-block;
+        height: 200px;
+        position: absolute;
+        transition: left 0.2s;
+        box-sizing: border-box;
+
+        border: 1px solid white;
+      }
+    }
+
+    .right {
+      position: absolute;
+      top: -20%;
+      left: 0;
+      cursor: pointer;
+    }
+    .left {
+      position: absolute;
+      top: -20%;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}

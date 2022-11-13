@@ -1,17 +1,17 @@
-import './App.scss';
-import Experience from './components/Experience';
-import Header from './components/Header';
-import Profile from './components/Profile';
-import Skill from './components/Skill';
+import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Header from "./components/Header";
+import Resume from "./Pages/Resume";
+import project from "./data/project";
 
 function App() {
   return (
     <div className="App">
-      <div className='main'>
+      <div className="main">
         <Header />
-        <Profile />
-        <Skill />
-        <Experience />
+        <Routes>
+          <Route path="/" element={<Resume project={project} />} />
+        </Routes>
       </div>
     </div>
   );
