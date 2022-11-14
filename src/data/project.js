@@ -1,5 +1,6 @@
 const project = [
   {
+    id:1,
     img: require('../imgs/내잔네잔.png'),
     name: "내잔네잔",
     engname: "My Cup Your Cup",
@@ -11,6 +12,7 @@ const project = [
     url: "https://east-cloud-of-forest.github.io/My-Cup-Your-Cup/",
   },
   {
+    id:2,
     img: require('../imgs/메타보드.png'),
     name: "메타보드",
     engname: "Metaboard",
@@ -22,6 +24,7 @@ const project = [
     url: "https://east-cloud-of-forest.github.io/Metaboard/",
   },
   {
+    id:3,
     img: require('../imgs/코디캐스터.png'),
     name: "코디캐스터",
     engname: "Codicaster",
@@ -33,6 +36,7 @@ const project = [
     url: "https://east-cloud-of-forest.github.io/Codicaster/",
   },
   {
+    id:4,
     img: require('../imgs/uiux.png'),
     name: "UI / UX 포트폴리오",
     engname: "",

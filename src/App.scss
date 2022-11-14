@@ -1,14 +1,16 @@
 @import "./style/colors";
 
+html {scroll-behavior: smooth;}
+
 .App {
   background-color: $basic;
   box-sizing: border-box;
   overflow: hidden;
   color: white;
-  padding-top: 3rem;
   font-family: CoreDream;
   font-weight: 100;
   padding-top: 13rem;
+  border: white;
 
   .main {
     max-width: 800px;
@@ -18,9 +20,30 @@
   .section {
     margin-top: 7rem;
   }
+
+  .footer {
+    border-top: 1px solid;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.3rem;
+    font-weight: 900;
+
+    span {
+      font-size: 1.1rem;
+      font-weight: 100;
+      margin-left: 0.3rem;
+    }
+  }
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

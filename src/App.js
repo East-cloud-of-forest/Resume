@@ -3,6 +3,8 @@ import "./App.scss";
 import Header from "./components/Header";
 import Resume from "./Pages/Resume";
 import project from "./data/project";
+import classNames from "classnames";
+import Project from "./Pages/Project";
 
 function App() {
   return (
@@ -11,7 +13,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Resume project={project} />} />
+          <Route path="/project" element={<Project project={project} />} />
         </Routes>
+        <div className={classNames("footer", "section")}>
+          Ecof<span>&copy;</span>
+        </div>
       </div>
     </div>
   );

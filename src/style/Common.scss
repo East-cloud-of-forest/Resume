@@ -34,6 +34,11 @@
   z-index: 0;
   cursor: pointer;
 
+  .anchor {
+    position: absolute;
+    top: -150%;
+  }
+
   .box {
     width: 15px;
     height: 100%;
