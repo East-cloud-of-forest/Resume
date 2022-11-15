@@ -6,6 +6,7 @@ import project from "./data/project";
 import classNames from "classnames";
 import Project from "./Pages/Project";
 import { useState } from "react";
+import Error from "./Pages/Error";
 
 function App() {
   const [dark, setDark] = useState(true)
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Resume project={project} />} />
           <Route path="/project" element={<Project project={project} />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
         <div className={classNames("footer", "section")}>
           Ecof<span>&copy;</span>
