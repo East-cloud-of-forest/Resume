@@ -38,7 +38,7 @@ const skill = [
   },
   {
     name : 'Design',
-    text : `Adobe Photoshop, Adobe Illustrator, Blander`
+    text : `Adobe Photoshop, Adobe Illustrator, Blender`
   },
 ]
 
