@@ -16,7 +16,7 @@ function App() {
       <div className="main">
         <Header setDark={setDark} dark={dark} />
         <Routes>
-          <Route path="/" element={<Resume project={project} />} />
+          <Route index path="/" element={<Resume project={project} />} />
           <Route path="/project" element={<Project project={project} />} />
           <Route path="/*" element={<Error />} />
         </Routes>
