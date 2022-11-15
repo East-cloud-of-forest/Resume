@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../style/Header.scss";
 import { Button } from "./Common";
 
-const Header = () => {
+const Header = ({ setDark, dark }) => {
   return (
     <div className="Header">
       <div className="inner">
@@ -14,8 +14,8 @@ const Header = () => {
             project
           </NavLink>
         </nav>
-        <Button white circle width="37px">
-          달
+        <Button white circle width="37px" onClick={()=>{setDark(!dark)}}>
+          {dark?'🌗':'🌓'}
         </Button>
       </div>
     </div>

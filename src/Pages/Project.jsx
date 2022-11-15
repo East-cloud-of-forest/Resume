@@ -14,9 +14,7 @@ const Project = ({ project }) => {
           <div className="imgbox">
             <img src={p.img} alt={p.engname} />
           </div>
-          <p>
-            {p.info}
-          </p>
+          <div className="textbox" dangerouslySetInnerHTML={{ __html: p.info }} />
           <div className="infobox">
             <p>{p.day}</p>
             <p>{p.dev}</p>

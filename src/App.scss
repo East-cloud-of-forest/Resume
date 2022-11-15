@@ -10,7 +10,7 @@ html {scroll-behavior: smooth;}
   font-family: CoreDream;
   font-weight: 100;
   padding-top: 13rem;
-  border: white;
+  transition: 0.3s;
 
   .main {
     max-width: 800px;
@@ -36,14 +36,29 @@ html {scroll-behavior: smooth;}
       margin-left: 0.3rem;
     }
   }
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
 
-a {
-  text-decoration: none;
-  color: white;
+  &.white {
+    color: $basic;
+    background-color: white;
+
+    a {
+      color: $basic;
+    }
+
+    .Button {
+      &:hover {
+        background-color: darken(white, 20%);
+      }
+    }
+  }
 }
