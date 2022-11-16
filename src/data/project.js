@@ -148,7 +148,7 @@ const project = [
           살펴볼 수 있습니다.
         </p>
     `,
-    day: "2021.05 ~ 2022.08",
+    day: "2021.05 ~ 2021.08",
     dev: "1인 UI / UX 디자인 및 퍼블리싱",
     git: "",
     url: "https://ecof-portfolio-nare.netlify.app/",
