@@ -8,7 +8,7 @@ const Error = () => {
     <div className="Error">
       <h1>404</h1>
       <h3>Page Not Found</h3>
-      <h2>페이지를 찾을 수 없습니디.</h2>
+      <h2>페이지를 찾을 수 없습니다.</h2>
       <Button onClick={()=>{nav('/')}}>👈 돌아가기</Button>
     </div>
   );
