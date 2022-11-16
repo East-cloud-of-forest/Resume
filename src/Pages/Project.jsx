@@ -17,7 +17,7 @@ const Project = ({ project }) => {
             <p>{p.dev}</p>
           </div>
           <div className="butonbox">
-            <Button onClick={()=>{window.open(p.git)}}>&#128218; GitHub</Button>
+            {p.git&&<Button onClick={()=>{window.open(p.git)}}>&#128218; GitHub</Button>}
             <Button onClick={()=>{window.open(p.url)}}>&#127968; Build Page</Button>
           </div>
         </div>
