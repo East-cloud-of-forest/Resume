@@ -25,9 +25,9 @@ export const Button = ({
   );
 };
 
-export const Title = ({ children, location }) => {
+export const Title = ({ children }) => {
   return (
-    <a className="Title" href={location?location + "#" + children:"#" + children}>
+    <a className="Title" href={"#" + children}>
       {children}
       <div className="anchor" id={children}></div>
       <div className="box"></div>
