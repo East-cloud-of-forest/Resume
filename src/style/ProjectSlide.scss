@@ -10,13 +10,10 @@
       margin: 2rem 0;
       width: 100%;
       position: relative;
-      left: -50%;
       height: 200px;
 
       .slide {
-        width: 45%;
         border-radius: 7px;
-        margin: 0 2.5%;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -90,6 +87,36 @@
         right: 0;
         .inner {
           transform: rotate(45deg) translate(-10%, 10%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) {
+  ul {
+    left: -50%;
+    .slide {
+      width: 45%;
+      margin: 0 2.5%;
+      @for $i from 0 through 3 {
+        &:nth-child(#{$i + 1}) {
+          left: 50% * $i;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  ul {
+    left: -100%;
+    .slide {
+      width: 90%;
+      margin: 0 5%;
+      @for $i from 0 through 3 {
+        &:nth-child(#{$i + 1}) {
+          left: 100% * $i;
         }
       }
     }

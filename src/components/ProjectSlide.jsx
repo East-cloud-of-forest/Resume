@@ -44,7 +44,7 @@ const ProjectSlide = ({ project }) => {
         </Button>
         <ul>
           {Card.map((p, i) => (
-            <li key={p.name} className="slide" style={{ left: 50 * i + "%" }}>
+            <li key={p.name} className="slide">
               <Link to={'/project#'+p.name}>
                 <span>{p.id}</span>
                 <p>{p.name}</p>
