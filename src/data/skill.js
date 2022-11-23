@@ -17,6 +17,7 @@ const skill = [
   {
     name : 'Redux',
     text : `Ducks 패턴으로 작성해 관리가 용이하도록 전역 상태관리를 할 수 있습니다. <br/>
+    Redux Toolkit 을 이용해 효율적인 Redux 사용이 가능하고 Thunk를 활용한 비동기처리가 가능합니다.<br/>
     API의 비동기 통신 및 여러 기능을 위한 middleware를 공부하고 있습니다.`
   },
   {
@@ -33,8 +34,9 @@ const skill = [
   {
     name : 'etc',
     text : `Git - 프로젝트의 버전관리를 할 수 있습니다. 커밋을 깔끔하게 작성할 수 있도록 공부하고 있습니다. <br/>
-    SASS - css 보다 높은 가독성의 스타일을 작성할 수 있습니다. 함수 및 연산자 등의 기능을 사용할 수 있습니다. <br/>
-    jQuery - 문법을 이용해 동적 웹페이지를 작성할 수 있습니다.`
+    SASS - Css 보다 높은 가독성의 스타일을 작성할 수 있습니다. 함수 및 연산자 등의 기능을 사용할 수 있습니다. <br/>
+    jQuery - 문법을 이용해 동적 웹페이지를 작성할 수 있습니다. <br/>
+    Styled Componenets - 컴포넌트별 스타일 관리 및 Js 문법을 활용한 Css 작성이 가능합니다.`
   },
   {
     name : 'Design',
